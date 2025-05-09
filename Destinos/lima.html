@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style_Globales.css">
+    <link rel="stylesheet" href="../css/style_Header.css">
+    <link rel="stylesheet" href="../css/style_Navigation.css">
+    <link rel="stylesheet" href="../css/style_Contactenos.css">
+    <link rel="stylesheet" href="../css/style_destinos.css">
+    <link rel="stylesheet" href="../css/style_Footer.css">
+    <link rel="stylesheet" href="../css/style_Audio.css">
+    <link rel="ico" href="Vahit.ico">
+    <title>Lima - Transportes Chasqui S. A.</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="../images/logo.png" alt="Logo Transportes Chasqui" class="logo">
+                <div class="title-container">
+                    <h1>Transportes Chasqui S.A.</h1>
+                    <p class="slogan">¡Más rápido, más seguro!</p>
+                </div>
+            </div>
+            <nav>
+                <button class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="../servicios.html">SERVICIOS</a></li>
+                    <li><a href="../destinos.html" class="active">DESTINOS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="destinos-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Destino: Lima</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-description">
+                        Descubre Lima, la capital de Perú, famosa por su historia, gastronomía y cultura. Viaja con
+                        Transportes Chasqui S.A. de forma segura y cómoda.
+                    </p>
+                </div>
+                <div class="destinos-grid">
+                    <div class="destino-card">
+                        <div class="destino-image">
+                            <img src="https://www.infobae.com/resizer/v2/XJ6ON4Q6RFEHFCFWYE7QHZEAIQ.jpg?auth=2677fe511fcbae5f7dbf3a9312dd966fcd54a4ef2fa6c9540c9cb23fab3c1a9c&smart=true&width=992&height=558&quality=85"
+                                alt="Imagen de Lima">
+                            <div class="destino-price">
+                                <span>S/. 50.00</span>
+                            </div>
+                        </div>
+                        <div class="destino-content">
+                            <h3>Lima</h3>
+                            <p>La capital de Perú, conocida por su historia, gastronomía y cultura. Disfruta de sus
+                                museos, plazas y la mejor comida del país.</p>
+                            <div class="destino-features">
+                                <div class="feature">
+                                    <i class="fas fa-clock"></i>
+                                    <span>5 horas</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Salidas diarias</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-bus"></i>
+                                    <span>Servicio directo</span>
+                                </div>
+                            </div>
+                            <div class="contacto-container" id="reserva-container"
+                                style="display: flex; gap: 32px; align-items: flex-start;">
+                                <div class="info-destino-card servicio-card"
+                                    style="flex:1; min-width:220px; background: #f8fafc; border: 2px solid #1976d2; border-radius: 14px; box-shadow: 0 2px 12px 0 rgba(25, 118, 210, 0.08); padding: 24px 18px; margin-bottom: 0;">
+                                    <div id="info-destino" style="margin:0;"></div>
+                                </div>
+                                <div class="contacto-form" style="flex:2;">
+                                    <div class="form-header">
+                                        <h3>Reserva tu viaje a Lima</h3>
+                                        <p>Completa el formulario para reservar tu asiento. Recibirás confirmación por
+                                            correo electrónico.</p>
+                                    </div>
+                                    <form id="reservaFormLima" action="../php/reserva.php" method="POST">
+                                        <div class="form-group">
+                                            <label for="nombre">Nombre completo <span class="required">*</span></label>
+                                            <div class="input-wrapper">
+                                                <i class="fas fa-user"></i>
+                                                <input type="text" id="nombre" name="nombre"
+                                                    placeholder="Ingresa tu nombre" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Correo electrónico <span class="required">*</span></label>
+                                            <div class="input-wrapper">
+                                                <i class="fas fa-envelope"></i>
+                                                <input type="email" id="email" name="email"
+                                                    placeholder="ejemplo@correo.com" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="telefono">Teléfono</label>
+                                            <div class="input-wrapper">
+                                                <i class="fas fa-phone"></i>
+                                                <input type="tel" id="telefono" name="telefono"
+                                                    placeholder="999-999-999">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="fecha">Fecha de viaje <span class="required">*</span></label>
+                                            <div class="input-wrapper">
+                                                <i class="fas fa-calendar-alt"></i>
+                                                <input type="date" id="fecha" name="fecha" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="hora">Hora de salida <span class="required">*</span></label>
+                                            <div class="input-wrapper">
+                                                <i class="fas fa-clock"></i>
+                                                <select id="hora" name="hora" required>
+                                                    <option value="">Seleccione una hora</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group checkbox-group">
+                                            <input type="checkbox" id="terminos" name="terminos" required>
+                                            <label for="terminos">Acepto recibir confirmación de mi reserva por correo
+                                                electrónico
+                                                <span class="required">*</span></label>
+                                        </div>
+                                        <div class="form-actions">
+                                            <button type="reset" class="btn-secondary">Limpiar</button>
+                                            <button type="submit" class="btn-primary">Reservar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- <a href="reserva.html?destino=Lima" class="btn-destino">Reservar en página completa</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="destinos-cta">
+                    <p>¿Quieres más información sobre Lima o reservar tu viaje?</p>
+                    <a href="../contactenos.html" class="btn">Consulta disponibilidad</a>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="../Libro de reclamaciones.html">Libro de Reclamaciones</a></li>
+                        <li><a href="../contactenos.html">Contáctenos</a></li>
+                        <li><a href="../acerca.html">Acerca de</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Trujillo</p>
+                    <p><i class="fas fa-phone"></i> (+51) 912 345 678</p>
+                    <p><i class="fas fa-envelope"></i> info@chasqui.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61575975725725"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://whatsapp.com/channel/0029VbAHyMUKbYMW8V73Op2J"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="https://github.com/Vanir021/Transportes_Chasqui-S.A" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Transportes Chasqui S.A. - Proyecto de Taller de Programación Web - Sección 20342
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="audio-player">
+        <button id="toggle-audio" class="audio-toggle">
+            <i class="fas fa-volume-up" id="volume-icon"></i>
+        </button>
+        <audio id="background-audio" src="../audio/audio.mp3"></audio>
+    </div>
+    <script>
+        // Menú responsivo
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('nav-links').classList.toggle('show');
+        });
+        // Control de audio
+        const audio = document.getElementById('background-audio');
+        const toggleButton = document.getElementById('toggle-audio');
+        const volumeIcon = document.getElementById('volume-icon');
+        let isPlaying = false;
+        toggleButton.addEventListener('click', function () {
+            if (isPlaying) {
+                audio.pause();
+                volumeIcon.className = 'fas fa-volume-mute';
+            } else {
+                audio.volume = 0.1;
+                audio.play();
+                volumeIcon.className = 'fas fa-volume-up';
+            }
+            isPlaying = !isPlaying;
+        });
+    </script>
+    <script src="../js/destinosData.js"></script>
+    <script>
+        // Mostrar info de Lima a la izquierda (sin el título ni la descripción repetida) y llenar el select de horas
+        document.addEventListener('DOMContentLoaded', function () {
+            if (typeof destinosData !== 'undefined') {
+                const destino = destinosData.find(d => d.nombre === 'Lima');
+                if (destino) {
+                    let horarios = destino.horarios.map(h => `<li>${h}</li>`).join("");
+                    const html = `
+                    <p><strong>Precio:</strong> ${destino.precio}</p>
+                    <p><strong>Horarios disponibles:</strong></p>
+                    <ul style='padding-left:18px;'>${horarios}</ul>
+                `;
+                    document.getElementById('info-destino').innerHTML = html;
+                }
+                // Llenar el select de horas
+                const selectHora = document.getElementById('hora');
+                if (destino && destino.horarios && selectHora) {
+                    destino.horarios.forEach(hora => {
+                        const option = document.createElement('option');
+                        option.value = hora;
+                        option.textContent = hora;
+                        selectHora.appendChild(option);
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

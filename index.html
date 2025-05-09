@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" href="Vahit.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style_Globales.css">
+    <link rel="stylesheet" href="css/style_Header.css">
+    <link rel="stylesheet" href="css/style_Navigation.css">
+    <link rel="stylesheet" href="css/style_Hero Section.css">
+    <link rel="stylesheet" href="css/style_Vision-Mission.css">
+    <link rel="stylesheet" href="css/style_values.css">
+    <link rel="stylesheet" href="css/style_Footer.css">
+    <link rel="stylesheet" href="css/style_Audio.css">
+    <link rel="ico" href="Vahit.ico">
+    <title>Transportes Chasqui S.A.</title>
+    
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Logo Transportes Chasqui" class="logo">
+                <div class="title-container">
+                    <h1>Transportes Chasqui S.A.</h1>
+                    <p class="slogan">¡Más rápido, más seguro!</p>
+                </div>
+            </div>
+            <nav>
+                <button class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="active">INICIO</a></li>
+                    <li><a href="servicios.html">SERVICIOS</a></li>
+                    <li><a href="destinos.html">DESTINOS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <img src="images/hero.png" alt="Fondo hero" class="hero-bg">
+        <div class="container">
+            <h2>Transporte terrestre de calidad</h2>
+            <p>Conectando destinos con seguridad y puntualidad desde 1995</p>
+            <a href="servicios.html" class="btn">Nuestros Servicios</a>
+        </div>
+    </section>
+
+    <section class="vision-mision">
+        <div class="container">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <h2>Visión</h2>
+                <p>Ser la empresa líder en transporte terrestre, reconocida por su puntualidad, seguridad y excelencia
+                    en el servicio.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                <h2>Misión</h2>
+                <p>Brindar soluciones de transporte confiables y eficientes, superando las expectativas de nuestros
+                    clientes con un equipo comprometido y profesional.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="valores">
+        <div class="container">
+            <h2>Nuestros Valores</h2>
+            <div class="valores-grid">
+                <div class="valor">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Seguridad</h3>
+                    <p>Priorizamos la seguridad en cada viaje</p>
+                </div>
+                <div class="valor">
+                    <i class="fas fa-clock"></i>
+                    <h3>Puntualidad</h3>
+                    <p>Respetamos el tiempo de nuestros clientes</p>
+                </div>
+                <div class="valor">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Confianza</h3>
+                    <p>Construimos relaciones duraderas</p>
+                </div>
+                <div class="valor">
+                    <i class="fas fa-star"></i>
+                    <h3>Calidad</h3>
+                    <p>Excelencia en cada servicio</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="Libro de reclamaciones.html">Libro de Reclamaciones</a></li>
+                        <li><a href="contactenos.html">Contáctenos</a></li>
+                        <li><a href="acerca.html">Acerca de</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Trujillo</p>
+                    <p><i class="fas fa-phone"></i> (+51) 912 345 678</p>
+                    <p><i class="fas fa-envelope"></i> info@chasqui.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61575975725725"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://whatsapp.com/channel/0029VbAHyMUKbYMW8V73Op2J"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://github.com/Vanir021/Transportes_Chasqui-S.A" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Transportes Chasqui S.A. - Proyecto de Taller de Programación Web - Sección 20342</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="audio-player">
+        <button id="toggle-audio" class="audio-toggle">
+            <i class="fas fa-volume-up" id="volume-icon"></i>
+        </button>
+        <audio id="background-audio" src="audio/audio.mp3"></audio>
+    </div>
+
+    <script>
+        // Menú responsivo
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('nav-links').classList.toggle('show');
+        });
+
+        // Control de audio
+        const audio = document.getElementById('background-audio');
+        const toggleButton = document.getElementById('toggle-audio');
+        const volumeIcon = document.getElementById('volume-icon');
+        let isPlaying = false;
+
+        toggleButton.addEventListener('click', function () {
+            if (isPlaying) {
+                audio.pause();
+                volumeIcon.className = 'fas fa-volume-mute';
+            } else {
+                audio.volume = 0.1;
+                audio.play();
+                volumeIcon.className = 'fas fa-volume-up';
+            }
+            isPlaying = !isPlaying;
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style_Globales.css">
+    <link rel="stylesheet" href="css/style_Header.css">
+    <link rel="stylesheet" href="css/style_Navigation.css">
+    <link rel="stylesheet" href="css/style_Contactenos.css">
+    <link rel="stylesheet" href="css/style_Footer.css">
+    <link rel="stylesheet" href="css/style_Audio.css">
+    <link rel="ico" href="Vahit.ico">
+    <title>Transportes Chasqui S. A.</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Logo Transportes Chasqui" class="logo">
+                <div class="title-container">
+                    <h1>Transportes Chasqui S.A.</h1>
+                    <p class="slogan">¡Más rápido, más seguro!</p>
+                </div>
+            </div>
+            <nav>
+                <button class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="servicios.html">SERVICIOS</a></li>
+                    <li><a href="destinos.html">DESTINOS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contacto-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contáctenos</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-description">
+                        Estamos aquí para ayudarte. Ponte en contacto con nosotros y te responderemos a la brevedad.
+                    </p>
+                </div>
+
+                <div class="contacto-container">
+                    <div class="contacto-info">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Dirección</h3>
+                                <p>Av. Principal 123, Trujillo, Perú</p>
+                                <p>Terminal Central, Oficina 123</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Teléfonos</h3>
+                                <p>(+51) 912 3456 789</p>
+                                <p>celular </p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Email</h3>
+                                <p>info@chasqui.com</p>
+                                <p>ventas@chasqui.com</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Horario de Atención</h3>
+                                <p>Lunes a Viernes: 8:00 AM - 8:00 PM</p>
+                                <p>Sábados y Domingos: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="social-media">
+                            <h3>Síguenos</h3>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contacto-form">
+                        <div class="form-header">
+                            <h3>Envíanos un mensaje</h3>
+                            <p>Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+                        </div>
+
+                        <form id="contactForm" action="php/enviar_contacto.php" method="POST">
+                            <div class="form-group">
+                                <label for="nombre">Nombre completo <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Correo electrónico <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="telefono">Teléfono</label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-phone"></i>
+                                        <input type="tel" id="telefono" name="telefono" placeholder="999-999-999">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="asunto">Asunto <span class="required">*</span></label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-tag"></i>
+                                        <select id="asunto" name="asunto" required>
+                                            <option value="" disabled selected>Selecciona una opción</option>
+                                            <option value="consulta">Consulta general</option>
+                                            <option value="reserva">Reserva de pasajes</option>
+                                            <option value="carga">Servicio de carga</option>
+                                            <option value="otro">Otro</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje <span class="required">*</span></label>
+                                <div class="input-wrapper textarea-wrapper">
+                                    <i class="fas fa-comment-alt"></i>
+                                    <textarea id="mensaje" name="mensaje" rows="5"
+                                        placeholder="Escribe tu mensaje aquí..." required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="terminos" name="terminos" required>
+                                <label for="terminos">Acepto recibir respuestas a mi consulta por correo electrónico
+                                    <span class="required">*</span></label>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="reset" class="btn-secondary">Limpiar</button>
+                                <button type="submit" class="btn-primary">Enviar mensaje</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <h3>Nuestra ubicación</h3>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63033.020695984356!2d-79.06135808472428!3d-8.11675357087757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d7fe3fae92d%3A0xd3bc7d125d4e8508!2sTrujillo!5e1!3m2!1ses-419!2spe!4v1746246642311!5m2!1ses-419!2spe"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="audio-player">
+            <button id="toggle-audio" class="audio-toggle">
+                <i class="fas fa-volume-up" id="volume-icon"></i>
+            </button>
+            <audio id="background-audio"
+                src="midnight-whispers-lo-fi-background-music-for-video-1-minute-321903.mp3"></audio>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="Libro de reclamaciones.html">Libro de Reclamaciones</a></li>
+                        <li><a href="contactenos.html">Contáctenos</a></li>
+                        <li><a href="acerca.html">Acerca de</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Trujillo</p>
+                    <p><i class="fas fa-phone"></i> (+51) 912 345 678</p>
+                    <p><i class="fas fa-envelope"></i> info@chasqui.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61575975725725"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://whatsapp.com/channel/0029VbAHyMUKbYMW8V73Op2J"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://github.com/Vanir021/Transportes_Chasqui-S.A" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Transportes Chasqui S.A. - Proyecto de Taller de Programación Web - Sección 20342</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="audio-player">
+        <button id="toggle-audio" class="audio-toggle">
+            <i class="fas fa-volume-up" id="volume-icon"></i>
+        </button>
+        <audio id="background-audio" src="audio/audio.mp3"></audio>
+    </div>
+
+    <script>
+        // Menú responsivo
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('nav-links').classList.toggle('show');
+        });
+
+        // Control de audio
+        const audio = document.getElementById('background-audio');
+        const toggleButton = document.getElementById('toggle-audio');
+        const volumeIcon = document.getElementById('volume-icon');
+        let isPlaying = false;
+
+        toggleButton.addEventListener('click', function () {
+            if (isPlaying) {
+                audio.pause();
+                volumeIcon.className = 'fas fa-volume-mute';
+            } else {
+                audio.volume = 0.1;
+                audio.play();
+                volumeIcon.className = 'fas fa-volume-up';
+            }
+            isPlaying = !isPlaying;
+        });
+    </script>
+
+</body>
+
+</html>

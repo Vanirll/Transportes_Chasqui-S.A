@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style_Globales.css">
+    <link rel="stylesheet" href="css/style_Header.css">
+    <link rel="stylesheet" href="css/style_Navigation.css">
+    <link rel="stylesheet" href="css/style_reclamaciones.css">
+    <link rel="stylesheet" href="css/style_Footer.css">
+    <link rel="stylesheet" href="css/style_Audio.css">
+    <link rel="ico" href="Vahit.ico">
+    <title>Transportes Chasqui S. A.</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Logo Transportes Chasqui" class="logo">
+                <div class="title-container">
+                    <h1>Transportes Chasqui S.A.</h1>
+                    <p class="slogan">¡Más rápido, más seguro!</p>
+                </div>
+            </div>
+            <nav>
+                <button class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="servicios.html">SERVICIOS</a></li>
+                    <li><a href="destinos.html">DESTINOS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="reclamaciones-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Libro de Reclamaciones</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-description">
+                        En Transportes Chasqui S.A., valoramos tus comentarios y sugerencias.
+                        Tu opinión nos ayuda a mejorar nuestros servicios y atender tus necesidades.
+                    </p>
+                </div>
+
+                <div class="reclamaciones-container">
+                    <div class="info-panel">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-clipboard-list"></i>
+                            </div>
+                            <h3>¿Cómo funciona?</h3>
+                            <p>Completa el formulario con todos los detalles de tu reclamo o sugerencia. Recibirás una
+                                respuesta en un plazo máximo de 30 días hábiles.</p>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Tiempo de respuesta</h3>
+                            <p>Nos comprometemos a revisar tu caso y darte una respuesta en el menor tiempo posible.</p>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Confidencialidad</h3>
+                            <p>Tus datos personales serán tratados con absoluta confidencialidad según nuestra política
+                                de privacidad.</p>
+                        </div>
+
+                        <div class="contact-info">
+                            <h3>¿Necesitas ayuda?</h3>
+                            <p><i class="fas fa-phone"></i> (01) 555-1234</p>
+                            <p><i class="fas fa-envelope"></i> reclamos@chasqui.com</p>
+                        </div>
+                    </div>
+
+                    <div class="form-panel">
+                        <h3>Formulario de Reclamo</h3>
+                        <form id="reclamacionForm" action="php/enviar_reclamo.php" method="post">
+                            <div class="form-group">
+                                <label for="nombre">Nombre Completo <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" id="nombre" name="nombre"
+                                        placeholder="Ingresa tu nombre completo" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Correo Electrónico <span class="required">*</span></label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-envelope"></i>
+                                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com"
+                                            required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="telefono">Teléfono</label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-phone"></i>
+                                        <input type="tel" id="telefono" name="telefono" placeholder="999-999-999">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="tipo">Tipo de Reclamo <span class="required">*</span></label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-tag"></i>
+                                        <select id="tipo" name="tipo" required>
+                                            <option value="" disabled selected>Selecciona una opción</option>
+                                            <option value="queja">Queja</option>
+                                            <option value="reclamo">Reclamo</option>
+                                            <option value="sugerencia">Sugerencia</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="fecha">Fecha del Incidente</label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-calendar"></i>
+                                        <input type="date" id="fecha" name="fecha">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mensaje">Detalle del Reclamo <span class="required">*</span></label>
+                                <div class="input-wrapper textarea-wrapper">
+                                    <i class="fas fa-comment-alt"></i>
+                                    <textarea id="mensaje" name="mensaje" rows="5"
+                                        placeholder="Describe detalladamente tu reclamo o sugerencia..."
+                                        required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="terminos" name="terminos" required>
+                                <label for="terminos">Acepto los <a href="#">términos y condiciones</a> y la <a
+                                        href="#">política de privacidad</a>. <span class="required">*</span></label>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="reset" class="btn-secondary">Limpiar</button>
+                                <button type="submit" class="btn-primary">Enviar Reclamo</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="Libro de reclamaciones.html">Libro de Reclamaciones</a></li>
+                        <li><a href="contactenos.html">Contáctenos</a></li>
+                        <li><a href="acerca.html">Acerca de</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Trujillo</p>
+                    <p><i class="fas fa-phone"></i> (+51) 912 345 678</p>
+                    <p><i class="fas fa-envelope"></i> info@chasqui.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61575975725725"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://whatsapp.com/channel/0029VbAHyMUKbYMW8V73Op2J"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://github.com/Vanir021/Transportes_Chasqui-S.A" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Transportes Chasqui S.A. - Proyecto de Taller de Programación Web - Sección 20342</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="audio-player">
+        <button id="toggle-audio" class="audio-toggle">
+            <i class="fas fa-volume-up" id="volume-icon"></i>
+        </button>
+        <audio id="background-audio" src="audio/audio.mp3"></audio>
+    </div>
+
+    <script>
+        // Menú responsivo
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('nav-links').classList.toggle('show');
+        });
+
+        // Control de audio
+        const audio = document.getElementById('background-audio');
+        const toggleButton = document.getElementById('toggle-audio');
+        const volumeIcon = document.getElementById('volume-icon');
+        let isPlaying = false;
+
+        toggleButton.addEventListener('click', function () {
+            if (isPlaying) {
+                audio.pause();
+                volumeIcon.className = 'fas fa-volume-mute';
+            } else {
+                audio.volume = 0.1;
+                audio.play();
+                volumeIcon.className = 'fas fa-volume-up';
+            }
+            isPlaying = !isPlaying;
+        });
+    </script>
+
+</body>
+
+</html>
